@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title">BLUETOOTH CONTROLER</string>
+    <string name="app_name">BLUETOOTH CONTROLER</string>
+<string name="close">CLOSE</string>
+<string name="clicks">CLICK S</string>
+<string name="clickd">CLICK D</string>
+<string name="volan">VOLAN</string>
+<string name="mouse">MOUSE</string>
+<string name="obj3d">OBJ3D</string>
+<string name="connect">CONECTEAZA</string>
+<string name="status_area">STATUS!.</string>
+<string name="bt_toggle">Toggle BT</string>
+<string name="cancel">Cancel</string>
+<string name="pick_device">Selecteaza device:</string>
+</resources>

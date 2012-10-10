@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:text="@string/title"
+        android:id="@+id/title" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/output_display"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:text="@string/status_area"
+        android:layout_below="@+id/ping"></TextView>
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:text="@string/bt_toggle"
+        android:id="@+id/bt_toggle"
+        android:onClick="doToggleBT"></ToggleButton>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/close"
+        android:layout_below="@+id/title"
+        android:text="@string/connect"
+        android:id="@+id/connect"
+        android:onClick="doConnectBT" android:enabled="false"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/close"
+        android:id="@+id/close"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/bt_toggle"
+        android:onClick="doSendclose"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clicks"
+        android:text="@string/clicks"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bt_toggle"
+        android:onClick="doSendclicks" android:enabled="false"></Button>
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clickd"
+        android:text="@string/clickd"
+        android:layout_toRightOf="@+id/clicks"
+        android:layout_below="@+id/close"
+        android:onClick="doSendclickd" android:enabled="false"></Button>
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/volan"
+        android:text="@string/volan"
+        android:layout_toRightOf="@+id/clickd"
+        android:layout_below="@+id/connect"
+        android:onClick="doSetVOLAN" android:enabled="false"></Button>
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mouse"
+        android:text="@string/mouse"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/clicks"
+        android:onClick="doSetMOUSE" android:enabled="false"></Button>
+         <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/obj3d"
+        android:text="@string/obj3d"
+        android:layout_toRightOf="@+id/mouse"
+        android:layout_below="@+id/clickd"
+        android:onClick="doSetOBJ3D" android:enabled="false"></Button>
+    </RelativeLayout>
+
